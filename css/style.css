@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Document */
+*{  
+    scroll-behavior: smooth;
+    list-style:none;
+    max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navbar-nav{
+    padding-right: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Change text color */
+    letter-spacing: 1px; /* Add spacing between letters */
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover{
+    border-bottom: 1px solid  #000 ;
+    border-bottom-width: 0.5px;
+}
+
+.navbar-brand img {
+    max-height: 60px; /* Adjust the size of the logo */
+    margin-right: 155px; /* Space between logo and text */
+}
+
+.navbar .btn-outline-success {
+    margin-right: 43px;
+    font-size: 14px; /* Adjust button text size */
+    border: none;
+    padding: 8px 16px; /* Adjust button padding */
+    background-color: #893232; /* Custom border color */
+    color: #fff; /* Custom text color */
+    transition: 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar .btn-outline-success a {
+    color: #fff;
+}
+
+.navbar .btn-outline-success:hover{
+    background-color: #000;  
+
+}
+
+
+.carousel-caption .btn , h1{
+    margin-bottom:39%;
+    margin-left:5%;
+}
+.carousel-caption h1 {
+    color: white;
+    text-align:left;
+    font-size:38pt;   
+}
+
+.carousel-caption .btn {
+    padding: 10px 20px; /* Add padding */
+    font-size: 14px;
+    background-color: #893232; /* Custom border color */
+    border: none;
+    border-radius: 4px;
+    width: 125px;
+    
+}
+
+.carousel-caption .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.carousel-caption .btn:hover{
+    background-color: #000;
+}
+
+.our-story h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.our-story .icon {
+    margin-bottom: 20px;
+    margin-left: 48%;
+}
+
+.our-story p {
+    font-size:13pt;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container{
+    padding-top: 25px;
+}
+.menu-header h1{
+    text-align: center;
+    margin: 20px 0 ;
+    font-weight: bold;
+    font-size: 30pt;
+    padding-right: 55px;
+    padding-bottom: 5px;
+
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+}
+
+.menu-item img {
+    width: 80%;
+    height:80%;
+    border-radius: 10px; 
+}
+  
+.menu-item h3 {
+    margin-top: 10px; 
+}  
+
+
+.container1 {
+    background-image: url('/images/web/b.jpg'); /* Set your background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    position: relative;
+    width: auto;
+    height: 50vh; /* Set container height to full viewport height */
+    padding: 50px; /* Add padding */
+}
+
+.container1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: 1; /* Ensure it sits above the background image */
+}
+
+.title, .btn {
+    position: relative;
+    z-index: 2; /* Make sure the content is above the overlay */
+    color: #fff; /* White text for visibility */
+}
+
+.title {
+    font-size: 2.5rem; /* Base font size */
+    margin-bottom: 20px; /* Space between title and button */
+    margin-left: 60%;
+    margin-top:55px;
+    font-weight:bold;
+}
+
+.container1 .btn {
+    padding: 10px 20px; /* Add padding */
+    font-size: 14px;
+    background-color: #893232; /* Custom border color */
+    border: none;
+    border-radius: 4px;
+    width: 130px;
+    text-align: center;
+    margin-left:67%;
+}
+
+.container1 .btn a{
+    text-decoration: none;  
+    color: #fff;
+}
+
+.container1 .btn:hover{
+    background-color: #000;
+}
+
+.container2 {
+    text-align: center;
+}
+
+.container2 h1{
+    color: #893232;
+    font-size: 30pt;
+    padding-right: 60px;
+}
+
+.container2 h5{
+    font-size:18pt;
+    padding-top: 5px;
+}
+
+.container2 .reviewsp{
+    padding-top: 3px;
+}
+
+.container2 .reviewspara{
+    padding-left: 565px;
+}
+
+.contact-section {
+    background-image: url('/images/web/map.jpg'); /* Use the map image here */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-container {
+    background: #fff;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-info form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+}
+
+form button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+form button:hover {
+    background-color: #333;
+ 
+}
+
+.contact-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.social-icons img {
+    width: 100px;
+}
+
+.social-icons .icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    color: #000;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* Make adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    .carousel-caption h1 {
+        font-size: 1.4rem;
+        transform: translateY(150%);
+    }
+
+    .carousel-caption .btn {
+        transform: translateY(230%);
+        padding: 8px 10px;
+        font-size: 10pt; /* Smaller font size for mobile */
+    }
+
+    .our-story h1 {
+        font-size: 1.75rem; 
+    }
+
+    .our-story .icon {
+        margin-right: 40%; 
+    }
+
+    .our-story p {
+        font-size: 11pt; /* Smaller text for mobile */
+        line-height: 1.5;
+    }
+
+    .menu-header h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25pt;
+    }
+
+    .menu-item img {
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .container1 {
+        padding: 20px; /* Less padding for smaller screens */
+        height: 40vh; /* Adjust height for smaller screens */
+    }
+
+    .title {
+        font-size: 1.8rem; /* Even smaller font size */
+        margin-left: 20%; /* Center the title for mobile */
+        margin-top: 55px;
+    }
+
+    .container1 .btn {
+        font-size: 12px;
+        margin-left: 27%; /* Adjust positioning */
+        width: 120px; /* Adjust button width */
+        text-align: center;
+    }
+
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-info h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .carousel-caption h1 {
+        font-size: 2rem; /* Slightly larger font for tablet */
+        transform: translateY(120%); /* Adjust for tablet */
+    }
+
+    .carousel-caption .btn {
+        transform: translateY(200%); /* Adjust button position */
+        padding: 10px 20px; /* Increase button padding for tablet */
+        font-size: 1rem; /* Larger font for tablet */
+    }
+
+    .our-story h1 {
+        font-size: 2rem; /* Slightly smaller for tablet */
+    }
+
+    .our-story .icon {
+        margin-right:20%; /* Adjust icon centering for tablet */
+    }
+
+    .our-story p {
+        font-size: 12pt; /* Smaller text for tablets */
+        line-height: 1.6;
+    }
+
+    .menu-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .title {
+        font-size: 2rem; /* Smaller font size for tablets */
+        margin-left: 40%; /* Adjust positioning */
+        margin-top: 40px;
+    }
+    
+    .container1 .btn {
+        font-size: 13px;
+        margin-left: 47%; /* Adjust positioning */
+    }
+}
+
+@media (max-width: 480px) {
+    .container1{
+        height: 40vh;
+        width: 40wh;
+    }
+    .contact-info h1 {
+        font-size: 24px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+}
